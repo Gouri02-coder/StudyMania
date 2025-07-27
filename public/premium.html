@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyMania - Premium</title>
+  <link rel="stylesheet" href="../src/styles/global.css">
+  <link rel="stylesheet" href="../src/styles/premium.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</style>
+</head>
+<body>
+
+   <!-- Header -->
+   <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="StudyHub Logo">
+        StudyMania
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="resources.html">Resources</a>
+        <a href="upload.html">Upload</a>
+        <a href="premium.html">Premium</a>
+        
+        <!-- Login/Signup links (shown when logged out) -->
+        <a href="login.html" class="login-link">Login</a>
+        <a href="signup.html" class="signup-link">Signup</a>
+        
+        <!-- Account dropdown (shown when logged in) -->
+        <div class="account-dropdown logged-out">
+          <button class="account-btn">
+            <img src="default-profile.jpg" alt="Profile" id="profile-pic">
+            <span id="username-display">Account</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="account-info">
+              <h4 id="dropdown-username">User Name</h4>
+              <p id="dropdown-email">user@example.com</p>
+            </div>
+            <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+            <a href="my-resources.html"><i class="fas fa-book"></i> My Resources</a>
+            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+            <div class="divider"></div>
+            <a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Premium Section -->
+  <section class="premium">
+    <div class="container">
+      <div class="premium-header">
+        <h2>Unlock Premium Features</h2>
+        <p>Choose the plan that fits your learning journey</p>
+      </div>
+      
+      <!-- Pricing Plans -->
+      <div class="pricing-table">
+        <!-- Basic Plan -->
+        <div class="plan basic">
+          <h3>Basic</h3>
+          <div class="price-container">
+            <span class="original-price">0₹</span>
+            <span class="discounted-price">0₹</span>
+          </div>
+          <p class="price-period">forever</p>
+          
+          <ul>
+            <li>Access to basic notes</li>
+            <li>No offline access</li>
+            <li>For 2 free trials</li>
+          </ul>
+          
+          <button class="btn">Get Started</button>
+        </div>
+        
+        <!-- Premium Plan -->
+        <div class="plan premium">
+          <h3>Premium</h3>
+          <div class="price-container">
+            <span class="original-price">199₹</span>
+            <span class="discounted-price">149₹<span class="price-period">/month</span></span>
+          </div>
+          
+          <ul>
+            <li>Unlimited downloads</li>
+            <li>Offline Access</li>
+            <li>Premium study resources</li>
+            <li>Ad-free experience</li>
+          </ul>
+          
+          <button class="btn best-plan">Subscribe Now</button>
+        </div>
+        
+        <!-- Pro Plan -->
+        <div class="plan pro">
+          <h3>Pro</h3>
+          <div class="price-container">
+            <span class="original-price">1799₹</span>
+            <span class="discounted-price">1499₹<span class="price-period">/year</span></span>
+          </div>
+          
+          <ul>
+            <li>All Premium Features</li>
+            <li>Community Access</li>
+            <li>Priority Support</li>
+            <li>Early access to new features</li>
+          </ul>
+          
+          <button class="btn">Get Pro</button>
+        </div>
+      </div>
+      
+      <div class="auto-renewal">
+        <p>Subscription automatically renews unless canceled</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 StudyMania. All rights reserved.</p>
+      <nav>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Add this right before  -->
+<div class="payment-modal" id="paymentModal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Complete Your Payment</h3>
+    <p>Scan the QR code using any UPI app</p>
+    <div class="qr-container">
+      <img src="QR.jpg" alt="UPI QR Code">
+    </div>
+    <div class="timer">
+      <p>Time remaining: <span id="countdown">02:00</span></p>
+    </div>
+    <div class="payment-success" id="paymentSuccess">
+      <i class="fas fa-check-circle"></i>
+      <h4>Payment Successful!</h4>
+      <p>Redirecting to homepage...</p>
+    </div>
+  </div>
+</div>
+
+  <script src="../src/scripts/premium.js"></script>
+  <script src="../src/scripts/account.js"></script>
+</body>
+</html>

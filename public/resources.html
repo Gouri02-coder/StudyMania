@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources - StudyMania</title>
+  <link rel="stylesheet" href="../src/styles/global.css">
+  <link rel="stylesheet" href="../src/styles/resources.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="StudyHub Logo">
+        StudyMania
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="resources.html">Resources</a>
+        <a href="upload.html">Upload</a>
+        <a href="premium.html">Premium</a>
+        
+        <!-- Login/Signup links (shown when logged out) -->
+        <a href="login.html" class="login-link">Login</a>
+        <a href="signup.html" class="signup-link">Signup</a>
+        
+        <!-- Account dropdown (shown when logged in) -->
+        <div class="account-dropdown logged-out">
+          <button class="account-btn">
+            <img src="default-profile.jpg" alt="Profile" id="profile-pic">
+            <span id="username-display">Account</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="account-info">
+              <h4 id="dropdown-username">User Name</h4>
+              <p id="dropdown-email">user@example.com</p>
+            </div>
+            <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+            <a href="my-resources.html"><i class="fas fa-book"></i> My Resources</a>
+            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+            <div class="divider"></div>
+            <a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Resources Section -->
+  <section class="resources">
+    <div class="container">
+      <h2>Resources</h2>
+
+      <!-- Search and Filter Bar -->
+      <div class="search-filter-bar">
+        <input type="text" id="search" placeholder="Search resources...">
+        <select id="filter">
+          <option value="all">All Categories</option>
+          <option value="notes">Notes</option>
+          <option value="ppt">Presentations</option>
+          <option value="question-papers">Question Papers</option>
+          <option value="assignments">Assignments</option>
+          <option value="projects">Projects</option>
+          <option value="journals">Journals</option>
+        </select>
+      </div>
+
+      <!-- Resource Grid -->
+<div class="resource-grid">
+  <!-- Mathematics - Discrete Mathematics -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>Discrete Mathematics Notes</h3>
+    <p>Comprehensive notes for Discrete Mathematics.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Mathematics - Differential Equations -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>Differential Equations Notes</h3>
+    <p>Detailed notes on Differential Equations.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Mathematics - Probability & Statistics -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>Probability & Statistics Notes</h3>
+    <p>Complete notes on Probability and Statistics.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Physics - Mechanics -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>Mechanics Notes</h3>
+    <p>Detailed notes on Physics Mechanics.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Chemistry - Applied Science -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>Applied Science Notes</h3>
+    <p>Comprehensive Applied Chemistry notes.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Electronics - EDS -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>Electronic Devices & Systems Notes</h3>
+    <p>Complete EDS course notes.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Electronics - BEE -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>Basic Electrical Engineering Notes</h3>
+    <p>Fundamental BEE concepts.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Computer Science - Programming in C -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>C Programming Notes</h3>
+    <p>Complete guide to Programming in C.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Computer Science - Data Visualization -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>Data Visualization Notes</h3>
+    <p>Python data visualization techniques.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Computer Science - Machine Learning -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>Machine Learning Notes</h3>
+    <p>Python ML algorithms and concepts.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Computer Science - DSA -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>DSA Notes</h3>
+    <p>Data Structures & Algorithms in C.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Computer Science - RDBMS -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>RDBMS Notes</h3>
+    <p>Relational Database concepts.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Computer Science - Java -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>Java Programming Notes</h3>
+    <p>Complete Java programming guide.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Computer Science - DAA -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>DAA Notes</h3>
+    <p>Design & Analysis of Algorithms in Java.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Computer Science - SET -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>Software Engineering Notes</h3>
+    <p>Software Engineering & Testing concepts.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Computer Science - AWS -->
+  <div class="resource-card" data-category="notes">
+    <img src="notes.png" alt="Notes Icon">
+    <h3>AWS Cloud Notes</h3>
+    <p>AWS Cloud Practitioner concepts.</p>
+    <a href="New Doc 01-08-2024 18.58.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Presentations -->
+  <div class="resource-card" data-category="ppt">
+    <img src="pptx.png" alt="PPT Icon">
+    <h3>Discrete Mathematics PPT</h3>
+    <p>Presentation on Discrete Math concepts.</p>
+    <a href="Cream_and_Green_Illustrative_Science_Project_Presentation[1] (1).pptx" download class="btn">Download</a>
+  </div>
+
+  <div class="resource-card" data-category="ppt">
+    <img src="pptx.png" alt="PPT Icon">
+    <h3>Differential Equations PPT</h3>
+    <p>Presentation on Diff Equations.</p>
+    <a href="Cream_and_Green_Illustrative_Science_Project_Presentation[1] (1).pptx" download class="btn">Download</a>
+  </div>
+
+  <div class="resource-card" data-category="ppt">
+    <img src="pptx.png" alt="PPT Icon">
+    <h3>Probability & Statistics PPT</h3>
+    <p>Presentation on Probability concepts.</p>
+    <a href="Cream_and_Green_Illustrative_Science_Project_Presentation[1] (1).pptx" download class="btn">Download</a>
+  </div>
+
+  <div class="resource-card" data-category="ppt">
+    <img src="pptx.png" alt="PPT Icon">
+    <h3>Mechanics PPT</h3>
+    <p>Physics Mechanics presentation.</p>
+    <a href="Cream_and_Green_Illustrative_Science_Project_Presentation[1] (1).pptx" download class="btn">Download</a>
+  </div>
+
+  <div class="resource-card" data-category="ppt">
+    <img src="pptx.png" alt="PPT Icon">
+    <h3>Applied Science PPT</h3>
+    <p>Chemistry applications presentation.</p>
+    <a href="Cream_and_Green_Illustrative_Science_Project_Presentation[1] (1).pptx" download class="btn">Download</a>
+  </div>
+
+  <!-- Question Papers -->
+  <div class="resource-card" data-category="question-papers">
+    <img src="paper.png" alt="Question Paper Icon">
+    <h3>Discrete Math 2024 Paper</h3>
+    <p>Previous year question paper.</p>
+    <a href="CBSE-Class-12-Question-Paper-Physics-2019-Set-1.pdf" download class="btn">Download</a>
+  </div>
+
+  <div class="resource-card" data-category="question-papers">
+    <img src="paper.png" alt="Question Paper Icon">
+    <h3>Differential Equations 2024</h3>
+    <p>Previous year question paper.</p>
+    <a href="CBSE-Class-12-Question-Paper-Physics-2019-Set-1.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Assignments -->
+  <div class="resource-card" data-category="assignments">
+    <img src="assignment.png" alt="Assignment Icon">
+    <h3>Discrete Math Assignment</h3>
+    <p>Problem set on graph theory.</p>
+    <a href="Kaagaz_20250311_203322624835.pdf" download class="btn">Download</a>
+  </div>
+
+  <div class="resource-card" data-category="assignments">
+    <img src="assignment.png" alt="Assignment Icon">
+    <h3>Differential Equations Assignment</h3>
+    <p>ODE problem solutions.</p>
+    <a href="Kaagaz_20250311_203322624835.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Projects -->
+  <div class="resource-card" data-category="projects">
+    <img src="project-management.png" alt="Project Icon">
+    <h3>Discrete Math Project</h3>
+    <p>Graph theory applications.</p>
+    <a href="Kaagaz_20250311_203322624835.pdf" download class="btn">Download</a>
+  </div>
+
+  <div class="resource-card" data-category="projects">
+    <img src="project-management.png" alt="Project Icon">
+    <h3>Machine Learning Project</h3>
+    <p>Python ML implementation.</p>
+    <a href="ml_project.pdf" download class="btn">Download</a>
+  </div>
+
+  <!-- Journals -->
+  <div class="resource-card" data-category="journals">
+    <img src="journal.png" alt="Journal Icon">
+    <h3>Math Research Journal</h3>
+    <p>Recent math research papers.</p>
+    <a href="math_journal.pdf" download class="btn">Download</a>
+  </div>
+
+  <div class="resource-card" data-category="journals">
+    <img src="journal.png" alt="Journal Icon">
+    <h3>Computer Science Journal</h3>
+    <p>Latest CS research papers.</p>
+    <a href="cs_journal.pdf" download class="btn">Download</a>
+  </div>
+</div>
+
+  <!-- JavaScript for Search and Filter -->
+  <script>
+    document.getElementById('search').addEventListener('input', function () {
+      const searchQuery = this.value.toLowerCase();
+      filterResources();
+    });
+
+    document.getElementById('filter').addEventListener('change', function () {
+      filterResources();
+    });
+
+    function filterResources() {
+      const searchQuery = document.getElementById('search').value.toLowerCase();
+      const filterValue = document.getElementById('filter').value;
+
+      document.querySelectorAll('.resource-card').forEach(card => {
+        const category = card.getAttribute('data-category');
+        const title = card.querySelector('h3').textContent.toLowerCase();
+
+        const matchesSearch = title.includes(searchQuery);
+        const matchesFilter = filterValue === 'all' || category === filterValue;
+
+        if (matchesSearch && matchesFilter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  <script src="../src/scripts/account.js"></script>
+</body>
+</html>

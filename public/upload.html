@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyMania - Upload Resource</title>
+  <link rel="stylesheet" href="../src/styles/global.css">
+  <link rel="stylesheet" href="../src/styles/upload.css">
+  <link rel="stylesheet" href="../src/styles/uploaded-resources.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="StudyHub Logo">
+        StudyMania
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="resources.html">Resources</a>
+        <a href="upload.html">Upload</a>
+        <a href="premium.html">Premium</a>
+        
+        <!-- Login/Signup links (shown when logged out) -->
+        <a href="login.html" class="login-link">Login</a>
+        <a href="signup.html" class="signup-link">Signup</a>
+        
+        <!-- Account dropdown (shown when logged in) -->
+        <div class="account-dropdown logged-out">
+          <button class="account-btn">
+            <img src="default-profile.jpg" alt="Profile" id="profile-pic">
+            <span id="username-display">Account</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="account-info">
+              <h4 id="dropdown-username">User Name</h4>
+              <p id="dropdown-email">user@example.com</p>
+            </div>
+            <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+            <a href="my-resources.html"><i class="fas fa-book"></i> My Resources</a>
+            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+            <div class="divider"></div>
+            <a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Upload Section -->
+  <section class="upload">
+    <div class="container">
+      <h2>Upload Your Study Material</h2>
+      <p class="subtitle">Share knowledge with the community by uploading valuable resources.</p>
+      <div class="upload-box">
+        <form id="upload-form">
+          <div class="form-group">
+            <label for="title"><i class="fas fa-file-alt"></i> Resource Title</label>
+            <input type="text" id="title" placeholder="Enter resource title" required>
+          </div>
+          <div class="form-group">
+            <label for="description"><i class="fas fa-align-left"></i> Description</label>
+            <textarea id="description" placeholder="Provide a brief description" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="category"><i class="fas fa-folder"></i> Select Category</label>
+            <select id="category" required>
+              <option value="notes">Handwritten Notes</option>
+              <option value="ppt">Presentations</option>
+              <option value="question-papers">Question Papers</option>
+              <option value="ebooks">E-Books</option>
+              <option value="assignments">Assignments</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="tags"><i class="fas fa-tags"></i> Add Tags (comma-separated)</label>
+            <input type="text" id="tags" placeholder="e.g. Physics, Algorithms, Data Structures" required>
+          </div>
+          <div class="form-group file-upload">
+            <label for="file"><i class="fas fa-upload"></i> Choose File</label>
+            <input type="file" id="file" required>
+          </div>
+          <div class="form-group">
+            <label for="visibility"><i class="fas fa-eye"></i> Visibility</label>
+            <select id="visibility" required>
+              <option value="public">Public</option>
+              <option value="private">Private</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="thumbnail"><i class="fas fa-image"></i> Upload Thumbnail</label>
+            <input type="file" id="thumbnail">
+          </div>
+          <button type="submit" class="btn pulse">Upload Resource</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Uploaded Resources Section -->
+  <section class="uploaded-resources">
+    <div class="container">
+      <h2>Your Uploaded Resources</h2>
+      <p class="subtitle">Manage and view all your shared resources</p>
+      
+      <div class="resources-container">
+        <div class="resource-tabs">
+          <button class="tab-button active" data-category="all">All Resources</button>
+          <button class="tab-button" data-category="notes">Notes</button>
+          <button class="tab-button" data-category="ppt">Presentations</button>
+          <button class="tab-button" data-category="question-papers">Question Papers</button>
+          <button class="tab-button" data-category="ebooks">E-Books</button>
+          <button class="tab-button" data-category="assignments">Assignments</button>
+        </div>
+        
+        <div class="resources-grid" id="resources-grid">
+          <!-- Resources will be dynamically added here -->
+          <div class="no-resources">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>You haven't uploaded any resources yet.</p>
+            <p>Upload your first resource using the form above!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 StudyMania. All rights reserved.</p>
+      <nav>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../src/scripts/upload.js"></script>
+  <script src="../src/scripts/account.js"></script>
+</body>
+</html>

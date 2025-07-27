@@ -1,0 +1,92 @@
+/* ==================== Signup Page Styling ==================== */
+.signup-container {
+  max-width: 420px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.signup-container h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.signup-container .subtitle {
+  color: #ffe4e4;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.signup-container input:focus {
+  transform: scale(1.05);
+  outline: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.signup-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: glow 1.5s infinite alternate;
+}
+
+.signup-container button:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+.signup-container p {
+  color: #fff;
+  margin-top: 15px;
+}
+
+.signup-container p a {
+  color: #ffeb3b;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.signup-container p a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+/* ==================== Animations ==================== */
+@keyframes slideIn {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); }
+  100% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.8); }
+}
