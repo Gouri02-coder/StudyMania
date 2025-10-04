@@ -71,5 +71,5 @@ For queries, suggestions, or collaboration:
 🌐 www.studymania.com
 ---
 
-## 📁 Folder Structure
+
 
