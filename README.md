@@ -41,28 +41,42 @@ StudyMania provides a clean, user-friendly interface where students can find cat
 - Cloudinary / Firebase (for file uploads)
 🌈 Future Enhancements
 
-Integration of AI-based study recommendations
+## 🚀 Future Enhancements
 
-Advanced search with filters
+- 🤖 **Integration of AI-based Study Recommendations**  
+  Personalized learning paths and resource suggestions powered by AI.
 
-User discussion forums
+- 🔍 **Advanced Search with Filters**  
+  Quickly find study materials using multiple filters and keyword-based search.
 
-Gamification for engagement (badges, ranks)
+- 💬 **User Discussion Forums**  
+  Engage with peers, ask questions, and share insights.
 
-Mobile app version
+- 🏆 **Gamification for Engagement**  
+  Earn badges, ranks, and rewards for consistent participation.
 
-🤝 Contributing
+- 📱 **Mobile App Version**  
+  Access StudyMania seamlessly on Android and iOS devices.
 
-Contributions are welcome!
-If you’d like to improve StudyMania, feel free to:
+---
 
-Fork the repository
+## 🤝 Contributing
 
-Create a new branch (feature/your-feature)
+Contributions are welcome!  
+If you’d like to improve **StudyMania**, follow these steps:
 
-Commit your changes
+```bash
+# 1. Fork the repository
+# 2. Create a new branch
+git checkout -b feature/your-feature
 
-Submit a pull request
+# 3. Commit your changes
+git commit -m "Add your feature description"
+
+# 4. Push to the branch
+git push origin feature/your-feature
+
+# 5. Submit a pull request
 
 📬 Contact
 
