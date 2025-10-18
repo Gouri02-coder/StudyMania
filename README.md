@@ -6,7 +6,7 @@
 
 ## 🌐 Website Overview
 
-![StudyMania Homepage](https://github.com/your-username/your-repo-name/blob/main/preview.png)
+
 
 StudyMania provides a clean, user-friendly interface where students can find categorized study resources. It also supports uploading of new materials, making it a community-driven knowledge hub.
 
